@@ -55,12 +55,12 @@
 
     <button id="button" class="modal-button">Show Modal</button>
 
-    <div class="modal" id="modal" role="dialog">
+    <div class="modal" id="modal" role="dialog" aria-labelledby="title" aria-describedby="description">
         <div class="modal-content">
             <h2 id="title">Modal window</h2>
             <p id="description">Information provided by the dialog.</p>
 
-            <button id="close-button" class="close-button">x</button>
+            <button id="close-button" class="close-button" aria-label="Close modal">x</button>
         </div>
     </div>
 </main>
