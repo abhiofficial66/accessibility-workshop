@@ -1,3 +1,25 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+ol:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .screen-reader-only {
   border: 0;
   clip-path: inset(100%);
