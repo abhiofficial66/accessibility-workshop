@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Headings - Accessibility workshop</title>
+        <link rel="stylesheet" href="../css/styles.css" media="all" />
+        <style>
+            .h3 {
+                display: block;
+                font-size: 1.2em;
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <main role="main">
+            <h1>Headings</h1>
+            <section>
+                <h2>User story</h2>
+                <p>
+                    Ilya is blind. She is the chief accountant at an insurance
+                    company (...) and like many other blind computer users, she
+                    does not read Braille.
+                </p>
+                <p>
+                    Ilya uses a screen reader and mobile phone to access the
+                    web. (...) Ilya encounters problems when websites are not
+                    properly coded and do not include alt text descriptions on
+                    images. These sites are unnavigable and require large
+                    amounts of time to read text from the top of the page to the
+                    bottom without navigation cues. Occasionally she finds
+                    herself trapped in areas on a webpage unable to move to
+                    another area and must abandon the page altogether.
+                </p>
+                <p>
+                    <em>
+                        Source:
+                        <a
+                            href="https://www.w3.org/WAI/people-use-web/user-stories/#accountant"
+                        >
+                            Web Accessibility Initiative (WAI) (2017). Stories
+                            of web users.
+                        </a>
+                    </em>
+                </p>
+            </section>
+            <section>
+                <div class="notice">
+                    <h2>Instructions</h2>
+                    For the following exercise:
+                    <ol>
+                        <li>
+                            Use the
+                            <a href="https://www.deque.com/axe/">
+                                axe browser extension
+                            </a>
+                            or
+                            <a href="https://wave.webaim.org/extension/">
+                                wave browser extension
+                            </a>
+                            to investigate the page
+                        </li>
+                        <li>
+                            Use the rotor in Voice Over to navigate heading
+                            based
+                        </li>
+                        <li>Fix what is going wrong in the page</li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <h2>Exercise</h2>
+                <h5 class="h3">The Track & Trace code of the package</h5>
+                <p>
+                    You can find it in the shipping confirmation. Check if the
+                    time slot has changed using this link.
+                </p>
+
+                <h3 class="h3">The delivery address</h3>
+                <p>
+                    Did you enter the correct delivery address? Make sure to
+                    check your postal code as well.
+                </p>
+
+                <h6 class="h3">Your mailbox</h6>
+                <p>
+                    Did you receive a not-home notification? The package may
+                    have been delivered to your neighbors, or the delivery
+                    driver may have planned a new delivery moment.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Keyboard navigation - Content reordering</title>
+        <link rel="stylesheet" href="../css/styles.css" media="all" />
+        <style>
+            .nav-content-ordering ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .nav-content-ordering li {
+                margin: 0 8px;
+                text-transform: uppercase;
+            }
+
+            .nav-content-ordering a {
+                padding: 0.5em;
+                display: inline-block;
+                border: 2px solid black;
+                border-radius: 0.5em;
+                text-decoration: none;
+                color: #333;
+            }
+
+            .nav-content-ordering a:focus {
+                outline: 4px solid orange;
+            }
+
+            .nav-content-ordering--flex li:nth-child(2) {
+                order: 2;
+                margin-left: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <main role="main">
+            <h1>Keyboard navigation - Accessibility workshop</h1>
+            <section>
+                <h2>User story</h2>
+                <p>
+                    Alex has worked as a reporter for more than 20 years and has
+                    developed a repetitive strain injury that makes it painful
+                    to use a mouse and to type for extended periods of time.
+                </p>
+                <p>
+                    Though it took considerable research, time, and commitment
+                    to learn, he is able to work with less pain using the
+                    following modifications to his work environment:
+                </p>
+                <ul>
+                    <li>use of an ergonomic keyboard</li>
+                    <li>use of keyboard commands without a mouse</li>
+                    <li>
+                        voice recognition software on his computer and mobile
+                        phone
+                    </li>
+                    <li>assistive touch on his mobile phone</li>
+                </ul>
+                <p>
+                    Alex encounters problems when websites and other online
+                    content cannot be navigated by keyboard commands alone. He
+                    frequently encounters web forms that do not have keyboard
+                    equivalents. Sometimes it is also difficult to skip content
+                    and navigate to sections on a webpage without using many
+                    keyboard commands, which is very tiring and limits the time
+                    he can spend working comfortably. (...) As a temporary fix,
+                    Alex's employer has built several custom work arounds that
+                    provide keyboard support for his use of the company's
+                    internal Content Management System with the intention to
+                    implement improved keyboard support to benefit all users on
+                    the next release of the software.
+                </p>
+                <p>
+                    <em>
+                        Source:
+                        <a
+                            href="https://www.w3.org/WAI/people-use-web/user-stories/#reporter"
+                        >
+                            Web Accessibility Initiative (WAI) (2017). Stories
+                            of web users.
+                        </a>
+                    </em>
+                </p>
+            </section>
+            <section>
+                <div class="notice">
+                    <h2>Instructions</h2>
+                    For the following exercise:
+                    <ol>
+                        <li>
+                            Use the
+                            <a
+                                href="https://accessibilityinsights.io/"
+                                target="_blank"
+                            >
+                                Accessibility Insights for Web
+                            </a>
+                            plugin to look at the tab stops
+                        </li>
+                        <li>
+                            use keyboard navigation to identify the issue and
+                            come up with a solution to fix it. For now you can
+                            ignore the design consequences this potentially has.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <h2>Exercise</h2>
+                <nav class="nav-content-ordering nav-content-ordering--flex">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/products">Our Products</a></li>
+                        <li><a href="/support">Support</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+    </body>
+</html>

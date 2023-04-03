@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ARIA roles - part 2 - Accessibility workshop</title>
+        <link rel="stylesheet" href="../css/styles.css" media="all" />
+    </head>
+    <body>
+        <main role="main">
+            <h1>ARIA roles - part 2</h1>
+            <section>
+                <div class="notice">
+                    <h2>Instructions</h2>
+                    For this exercise:
+                    <ol>
+                        <li>Provide proper context for the form elements</li>
+                        <li>
+                            Use <code>role="group"</code> and
+                            <code>aria-label</code> to provide context for the
+                            text fields for entering a name
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.coolblue.nl/design-system/guidelines/accessibility/accessible-names"
+                                target="_blank"
+                            >
+                                Information about aria-label
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.w3.org/TR/WCAG20-TECHS/ARIA14.html"
+                                target="_blank"
+                            >
+                                Background information about the role attribute
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section>
+                <h2>Exercise</h2>
+                <form method="post">
+                    <div>
+                        Name:
+                        <input
+                            type="text"
+                            name="firstname"
+                            placeholder="First name"
+                        />
+                        <input type="text" name="prefix" placeholder="Prefix" />
+                        <input
+                            type="text"
+                            name="lastname"
+                            placeholder="Last name"
+                        />
+                    </div>
+
+                    <button type="submit">Proceed</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
