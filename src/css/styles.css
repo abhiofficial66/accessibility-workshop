@@ -15,9 +15,15 @@ p:last-child {
   margin-bottom: 0;
 }
 
+.container,
 main {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+section,
+.section {
+  margin: 32px 0;
 }
 
 .screen-reader-only {
